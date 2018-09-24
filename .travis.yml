@@ -1,7 +1,7 @@
 language: python
 python:
  - "3.5"
-
-# command to run tests
+install:
+  - pip install requests
 script:
  - python -m unittest HW4Test
