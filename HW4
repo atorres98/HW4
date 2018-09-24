@@ -1,0 +1,24 @@
+import requests
+import json
+
+
+
+def gitHubAPI(ID):
+    url = "http://api.github.com/users/" + ID + "/repos"
+    repos = requests.get(url)
+    userRepos = json.loads(repos.content.decode('utf-8'))
+    repoList = []
+    for repo in userRepos:
+        commURL = "https://api.github.com/repos/"+ID+"/"+repo["name"]+"/commits"
+        commits = requests.get(commURL)
+        comm = json.loads(commits.content.decode('utf-8'))
+
+        print("User ID: " + ID + "Repo: " + repo["name"] + " Number of Commits: " + str(len(comm)))
+
+        repoList.append((str(repo["name"]), len(comm)))
+
+    return repoList
+
+if __name__ == "__main__":
+    gitHubAPI("atorres98")
+    gitHubAPI("richkempinski")
