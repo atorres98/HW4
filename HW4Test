@@ -7,3 +7,7 @@ class testHW4GitHub(unittest.TestCase):
 
     def testUser2(self):
         self.assertEqual(gitHubAPI("richkempinski"), [('hellogitworld', 30), ('helloworld', 2), ('Project', 2), ('threads-of-life', 1)])
+
+if __name__ == '__main__':
+    print('Running unit tests')
+    unittest.main()
