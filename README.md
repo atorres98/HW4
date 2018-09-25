@@ -1,1 +1,1 @@
-[![build status of master](https://travis-ci.org/atorres98/HW4.svg?branch=master)](https://travis-ci.org/atorres98/HW4)
+[![build status of HW05a_Mocking](https://travis-ci.org/atorres98/HW4.svg?branch=HW05a_Mocking)](https://travis-ci.org/atorres98/HW4)
