@@ -18,7 +18,7 @@ class testHW4GitHub(unittest.TestCase):
         json_results_list = []
         results = [Mock(), Mock(), Mock()]
         json_results_list.append(json.loads('[{"name" : "Classify-Triangles"}. {"name": "Hello-World"}, {"name": "HW2a567"}, {"name": "HW4"}]'))
-        json_results_list.append(json.loads('[ { "commit" : "1" }, { "commit" : "10" }, { "commit" : "2" }, { "commit" : "29" },  { "commit" : "19" } ]'))
+        json_results_list.append(json.loads('[ { "commit" : "1" }, { "commit" : "10" }, { "commit" : "2" }, { "commit" : "29" },  { "commit" : "21" } ]'))
         m.json.side_effect = results
 
     # def testInput1(self, injMock):
